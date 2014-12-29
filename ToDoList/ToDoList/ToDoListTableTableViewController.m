@@ -9,6 +9,7 @@
 #import "ToDoListTableTableViewController.h"
 #import "AddToDoItemViewController.h"
 #import "ToDoItemData.h"
+#define TODOITEMLIST_FILE_PATH @"toDoItemList.plist"
 
 @interface ToDoListTableTableViewController ()
 
@@ -28,11 +29,13 @@
 }
 
 - (void)loadData{
-    self.toDoItemList = [[NSMutableArray alloc] init];
-    [self.toDoItemList addObject: [[ToDoItemData alloc] initWithSubject:@"Buy Milk" ]];
-    [self.toDoItemList addObject: [[ToDoItemData alloc] initWithSubject:@"Call Ananta" ]];
-    [self.toDoItemList addObject: [[ToDoItemData alloc] initWithSubject:@"Read Book" ]];
+    self.toDoItemList = [[NSMutableArray alloc] initWithContentsOfFile:TODOITEMLIST_FILE_PATH];
+//    self.toDoItemList = [[NSMutableArray alloc] init];
     [self.tableView reloadData];
+}
+
+- (void)saveToDisk{
+    [self.toDoItemList writeToFile:TODOITEMLIST_FILE_PATH atomically:NO];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +49,7 @@
     if (addToDoItemVC.toDoItem != nil) {
         [self.toDoItemList addObject:addToDoItemVC.toDoItem];
         [self.tableView reloadData];
+//                [self saveToDisk];
     }
 }
 
@@ -58,6 +62,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
+    NSLog(@"%lu", [self.toDoItemList count]);
     return [self.toDoItemList count];
 }
 

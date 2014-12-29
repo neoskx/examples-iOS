@@ -1,0 +1,6 @@
+xcodeproj 'GoogleDriveExample/GoogleDriveExample.xcodeproj'
+
+inhibit_all_warnings!
+
+platform :ios, '7.0'
+pod 'Google-API-Client'
