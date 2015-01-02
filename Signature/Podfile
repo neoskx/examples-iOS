@@ -1,0 +1,11 @@
+xcodeproj 'Signature/Signature.xcodeproj'
+
+inhibit_all_warnings!
+
+platform :ios, '7.0'
+
+pod "Google-API-Client"
+pod "PPSSignatureView"
+pod "ABPadLockScreen"
+pod "SDWebImage"
+pod "MBProgressHUD"
