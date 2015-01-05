@@ -50,6 +50,16 @@
     // [self createAppRootFolder];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"viewDidAppear");
+    [[DBManager getSharedInstance] getBrownBagLists:-1];
+    
+}
+
+- (void)udpateBrownBagList{
+    
+}
+
 - (void)viewController:(GTMOAuth2ViewControllerTouch *)viewController
       finishedWithAuth:(GTMOAuth2Authentication *)authResult
                  error:(NSError *)error{

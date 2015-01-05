@@ -18,6 +18,8 @@
 		5DC788F71A4E94AD006A752A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC788F61A4E94AD006A752A /* Images.xcassets */; };
 		5DC788FA1A4E94AD006A752A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DC788F81A4E94AD006A752A /* LaunchScreen.xib */; };
 		5DC789061A4E94AD006A752A /* SignatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC789051A4E94AD006A752A /* SignatureTests.m */; };
+		5DD537AF1A57C47E00126498 /* NewBrownBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD537AE1A57C47E00126498 /* NewBrownBag.m */; };
+		5DD537B21A58F68000126498 /* BrownBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD537B11A58F68000126498 /* BrownBag.m */; };
 		73F2BE404B6D835607D0DD7E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD593A414D639249CFF1ADDB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,10 @@
 		5DC788FF1A4E94AD006A752A /* SignatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC789041A4E94AD006A752A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC789051A4E94AD006A752A /* SignatureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignatureTests.m; sourceTree = "<group>"; };
+		5DD537AD1A57C47E00126498 /* NewBrownBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBrownBag.h; sourceTree = "<group>"; };
+		5DD537AE1A57C47E00126498 /* NewBrownBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBrownBag.m; sourceTree = "<group>"; };
+		5DD537B01A58F68000126498 /* BrownBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrownBag.h; sourceTree = "<group>"; };
+		5DD537B11A58F68000126498 /* BrownBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrownBag.m; sourceTree = "<group>"; };
 		DD593A414D639249CFF1ADDB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93159BF2E6CF754EC236F82 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,8 @@
 			children = (
 				5D0E8E281A54C215000D033F /* DBManager.h */,
 				5D0E8E291A54C215000D033F /* DBManager.m */,
+				5DD537B01A58F68000126498 /* BrownBag.h */,
+				5DD537B11A58F68000126498 /* BrownBag.m */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -124,6 +132,8 @@
 				5D0E8E221A532ED7000D033F /* BrownBagLists.h */,
 				5D0E8E231A532ED7000D033F /* BrownBagLists.m */,
 				5D0E8E2B1A5605A2000D033F /* appConfig.h */,
+				5DD537AD1A57C47E00126498 /* NewBrownBag.h */,
+				5DD537AE1A57C47E00126498 /* NewBrownBag.m */,
 			);
 			path = Signature;
 			sourceTree = "<group>";
@@ -310,10 +320,12 @@
 			files = (
 				5DC788F21A4E94AD006A752A /* ViewController.m in Sources */,
 				5DC788EF1A4E94AD006A752A /* AppDelegate.m in Sources */,
+				5DD537AF1A57C47E00126498 /* NewBrownBag.m in Sources */,
 				5D0E8E241A532ED7000D033F /* BrownBagLists.m in Sources */,
 				5D0E8E2A1A54C215000D033F /* DBManager.m in Sources */,
 				5DC788EC1A4E94AD006A752A /* main.m in Sources */,
 				5D0E8D8F1A4F93D8000D033F /* SignatureView.m in Sources */,
+				5DD537B21A58F68000126498 /* BrownBag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,4 +14,10 @@
 
 @interface BrownBagLists : UITableViewController
 @property (nonatomic, retain) GTLServiceDrive *driveService;
+
+/**
+ Update Brown Bag List
+ */
+- (void)udpateBrownBagList;
+
 @end
